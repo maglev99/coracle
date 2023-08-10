@@ -173,6 +173,8 @@ export class Builder {
 
   createLabel = (payload: EventOpts) => buildEvent(1985, payload)
 
+  createGroupMeta = (payload: EventOpts) => buildEvent(10024, payload)
+
   initialize(engine: Engine) {
     this.engine = engine
   }

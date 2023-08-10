@@ -1,7 +1,11 @@
-import type {Event as NostrToolsEvent} from "nostr-tools"
+import type {Event as NostrToolsEvent, UnsignedEvent} from "nostr-tools"
 
 export type Event = NostrToolsEvent & {
   seen_on: string[]
+}
+
+export type Rumor = UnsignedEvent & {
+  id: string
 }
 
 export type ZapEvent = Event & {
@@ -115,6 +119,34 @@ export type Channel = {
   last_checked?: number
   joined?: boolean
   hints: string[]
+}
+
+export type Group = {
+  pubkey: string
+  name?: string
+  about?: string
+  picture?: string
+  publish?: boolean
+  updated_at: number
+  relays: string[]
+  joined?: boolean
+}
+
+export type GroupKey = {
+  group: string
+  pubkey: string
+  privkey: string
+}
+
+export type GroupEvent = {
+  id: string
+  group: string
+  author: string
+  kind: number
+  content: string
+  tags: string[][]
+  wrap: Event
+  resolved?: boolean
 }
 
 export type Contact = {

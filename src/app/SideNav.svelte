@@ -64,6 +64,11 @@
       {/if}
     </a>
   </li>
+  <li class="relative">
+    <a class="block px-4 py-2 transition-all hover:bg-accent hover:text-white" href="/groups">
+      <i class="fa fa-circle-nodes mr-2" /> Groups
+    </a>
+  </li>
   <li class="cursor-pointer">
     <a class="block px-4 py-2 transition-all hover:bg-accent hover:text-white" href="/apps">
       <i class="fa fa-box mr-2" /> Apps

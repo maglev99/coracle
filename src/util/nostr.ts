@@ -146,6 +146,7 @@ export const normalizeRelayUrl = (url: string) => {
 }
 
 export const channelAttrs = ["name", "about", "picture"]
+export const groupAttrs = ["name", "about", "picture"]
 
 export const asDisplayEvent = (event: Event): DisplayEvent => ({
   replies: [],

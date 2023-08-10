@@ -6,6 +6,8 @@
   import Bech32Entity from "src/app/views/Bech32Entity.svelte"
   import ChatDetail from "src/app/views/ChatDetail.svelte"
   import ChatList from "src/app/views/ChatList.svelte"
+  import GroupList from "src/app/views/GroupList.svelte"
+  import GroupCreate from "src/app/views/GroupCreate.svelte"
   import Feeds from "src/app/views/Feeds.svelte"
   import UserKeys from "src/app/views/UserKeys.svelte"
   import Apps from "src/app/views/Apps.svelte"
@@ -58,6 +60,8 @@
         <MessagesDetail entity={params.entity} />
       {/key}
     </TypedRoute>
+    <TypedRoute path="/groups" component={GroupList} />
+    <TypedRoute path="/groups/new" component={GroupCreate} />
     <TypedRoute path="/apps" component={Apps} />
     <TypedRoute path="/keys" component={UserKeys} />
     <TypedRoute path="/relays" component={RelayList} />

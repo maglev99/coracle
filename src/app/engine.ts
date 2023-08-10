@@ -53,6 +53,7 @@ export const Content = engine.Content
 export const Crypt = engine.Crypt
 export const Directory = engine.Directory
 export const Events = engine.Events
+export const Groups = engine.Groups
 export const Keys = engine.Keys
 export const Network = engine.Network
 export const Nip02 = engine.Nip02
